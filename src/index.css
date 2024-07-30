@@ -1,13 +1,87 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://rsms.me/inter/inter.css");
+
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html,
+body,
+main,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: inter;
+  color: black;
+  background: #202025;
+}
+
+.figma-container {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+  touch-action: none; /* Disable touch interactions */
+  -ms-touch-action: none; /* Disable touch interactions for IE */
+  -webkit-touch-callout: none; /* Disable callouts on iOS */
+  -webkit-user-select: none; /* Disable user selection on iOS */
+  -moz-user-select: none; /* Disable user selection for Firefox */
+  -ms-user-select: none; /* Disable user selection for IE */
+  user-select: none; /* Disable user selection */
+}
+
+.figma {
+  width: 194px;
+  height: 378px;
+  border: 0px solid black;
+  border-radius: 20px;
+  max-width: 100%; /* Ensure the iframe doesn’t exceed container width */
+  max-height: 100%; /* Ensure the iframe doesn’t exceed container height */
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+  touch-action: none; /* Disable touch interactions */
+  -ms-touch-action: none; /* Disable touch interactions for IE */
+  -webkit-touch-callout: none; /* Disable callouts on iOS */
+  -webkit-user-select: none; /* Disable user selection on iOS */
+  -moz-user-select: none; /* Disable user selection for Firefox */
+  -ms-user-select: none; /* Disable user selection for IE */
+  user-select: none; /* Disable user selection */
+}
+
+@media (max-width: 768px) {
+  .figma {
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+.laptop-content {
+  display: flex;
+  width: 333px;
+  height: 215px;
+  overflow: hidden;
+  background: #f0f0f0;
+  border-radius: 3px;
+  overflow-y: auto;
+  padding: 0;
+}
+
+.laptop-wrapper {
+  display: flex;
+  width: 333px;
+  height: 215px;
+  overflow: hidden;
+
+  transform-origin: top left;
 }
