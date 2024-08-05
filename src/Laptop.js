@@ -98,10 +98,10 @@ function Model(props) {
 
 export default function App(props) {
   return (
-    <Canvas camera={{ position: [-5, 0, -16], fov: 55 }}>
+    <Canvas camera={{ position: [-5, 0, -10], fov: 55 }}>
       <pointLight position={[10, 10, 10]} intensity={1.5} />
       <Suspense fallback={null}>
-        <group rotation={[0, Math.PI, 0]} position={[0, 1, 0]}>
+        <group rotation={[0, Math.PI, 0]} position={[0, -1, 0]}>
           <Model link={props.link} />
         </group>
         <Environment preset="city" />
@@ -118,4 +118,4 @@ export default function App(props) {
 }
 
 // http://localhost:3000/?mockup=laptop&link=https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F26UAP6tQBFsqOcWLlzUBO8%2FEVENT-MANAGEMENT%3Fnode-id%3D1003-1805%26t%3DrMPkZRokOuo5c1m4-1%26scaling%3Dscale-down-width%26content-scaling%3Dfixed%26page-id%3D1003%253A1791%26starting-point-node-id%3D1003%253A1805&hide-ui=1
-// http://localhost:3000/?mockup=laptop&link=https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FPtTH9DQLTiyE5gsfg6F5MW%2FBooking%3Fnode-id%3D19-7117%26t%3DIuz7CcozY40BDPqN-1%26scaling%3Dscale-down-width%26content-scaling%3Dfixed%26page-id%3D0%253A1%26starting-point-node-id%3D19%253A7117&hide-ui=1
+// http://localhost:3000/?mockup=phone&link=https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FPtTH9DQLTiyE5gsfg6F5MW%2FBooking%3Fnode-id%3D19-7117%26t%3DIuz7CcozY40BDPqN-1%26scaling%3Dscale-down-width%26content-scaling%3Dfixed%26page-id%3D0%253A1%26starting-point-node-id%3D19%253A7117&hide-ui=1
